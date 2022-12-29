@@ -1,0 +1,262 @@
+:root{
+    font-size: 15px;
+    --base:#000000;
+    --base_dark: #1e1e1e;
+    --contrast:#ffffff;
+    --main:#5EB786;
+    --dominant:#29A3B1;
+    --suttle:#A8CF45;
+    --box:#17202d;
+}
+  
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  
+  
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #ffffff; */
+}
+  
+html,
+body {
+  background-image: url("./baground.png");
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  transition: 0.2s ease-in-out;
+  background-color: var(--box);
+  cursor: pointer;
+  min-width: 240px;
+  min-height: 42px;
+  outline: none;
+  border-radius: 30px;
+  font-size: 25px;
+  font-family: Inter;
+}
+
+h1,label,p{
+  color: #ffffff;
+}
+
+  
+#signup{
+  color: var(--dominant);
+  border:2px solid var(--dominant);
+}
+
+#login{
+  color: var(--dominant);
+  border:2px solid var(--dominant);
+}
+  
+#cancel{
+  color: var(--main);
+  border:2px solid var(--main);
+}
+  
+button:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+  
+#signup:hover{
+  background-color: var(--dominant);
+  color: var(--box);
+  border: 3px solid var(--base);
+}
+
+#login:hover{
+  background-color: var(--dominant);
+  color: var(--box);
+  border: 3px solid var(--base);
+}
+  
+  
+#cancel:hover{
+  background-color: var(--main);
+  color: var(--box);
+  border: 3px solid var(--base);
+}
+  
+a{
+  color: var(--suttle);
+}
+
+
+
+.signupContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  width: 544.472px;
+  height: 700px;
+  margin:auto;
+  margin-bottom: 2vh;
+  padding: 5px 29px;
+  background-color: rgba(11,11, 23, 75%);
+  border-radius:5%;
+}
+
+.loginContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  width: 544.472px;
+  height: 600px;
+  margin:auto;
+  margin-bottom: 2vh;
+  padding: 5px 29px;
+  background-color: rgba(11,11, 23, 75%);
+  border-radius:5%;
+}
+
+.signupContainer label{
+  font-size: large;
+}
+
+.log_text{
+  text-align:center; 
+  margin-top:3px;font-size: large;
+  color: rgb(157, 157, 157);
+}
+
+.loginContainer label{
+  font-size: x-large;
+}
+
+.loginContainer .label_log{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.userinput{
+  width: 100%;
+  font-size: 17px;
+  padding: 12px;
+  margin: 5px 0px 12px 0px;
+  background: var(--box);
+  color: var(--dominant);
+}
+
+.userinput:focus {
+  background-color:var(--box) ;
+  outline: none;
+  border-bottom: 3px solid var(--dominant);
+  border-right: 3px solid var(--dominant);
+}
+
+hr {
+  border: 1px solid var(--dominant);
+  margin-bottom: 25px;
+}
+.LoginIcons{
+  margin: 10px 0px;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+    
+div.LoginIcons a{
+  display: table-cell;
+  text-align: center;
+  color: #ffffff;
+}
+div.LoginIcons i:hover{
+  color: #29A3B1;
+  /* border: 2px solid black; */
+}
+
+/* Navigation */
+  
+nav {
+  /* box-shadow: 0px 5px 10px var(--dominant); */
+  position: sticky;
+  top: 0;
+  margin-bottom: 12px;
+  background: black;
+  padding: 10px 20px;
+  z-index: 50;
+}
+      
+nav img{
+  width: 50px;
+  border-radius: 20%;
+}
+
+nav img{
+  box-shadow: -1px 1px 8px -1px var(--main),
+  1px 1px 8px -1px var(--dominant),
+  1px -1px 8px -1px var(--dominant);
+}
+      
+nav input{
+  border-radius: 30px;
+  height: 50px;
+  width: 50vw;
+  text-align: center;
+  border-color: var(--main);
+  color: var(--dominant);
+  font-size: 150%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+      
+.container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+.log {
+  font-size: 20px;
+}
+
+.log a{
+  transition: 0.2s ease-in-out;
+  margin-left: 20px;
+}
+      
+.signIn{
+  color: var(--main);
+  padding: 8px;
+  border: 2px solid var(--main);
+  border-radius: 20px;
+}
+
+.signIn:hover{
+  background-color: var(--main);
+  color: #000000;
+  text-decoration: underline;
+}
+      
+.logIn{
+  color: var(--dominant);
+  padding: 8px;
+  border: 2px solid var(--dominant);
+  border-radius: 20px;
+}
+
+.logIn:hover{
+  background-color: var(--dominant);
+  color: #000000;
+  text-decoration: underline;
+}

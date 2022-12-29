@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/imgs/img1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Muzic</title>
+    <link rel="stylesheet" href="./log.css" />
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css" />
+    <script src="https://kit.fontawesome.com/21b8bedd66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+      <div class="navigation container">
+        <div class="logo_container">
+          <a href="./index.html"><img src="./src/imgs/img1.png" alt="logo" /></a>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="What would you like to listen to">
+        </div>
+        <div class="log">
+            <a href="./signup.html" class="signIn">Sign In</a>
+            <a href="./login.html" class="logIn">Login In</a>
+        </div>
+      </div>
+    </nav>
+    <!-- log in -->
+    <div class="loginContainer">
+      <h1>Login to your account</h1>
+		  <hr>
+		  <label><b>Email/phone number</b></label>
+		  <input class="userinput" type="text" placeholder="Enter your Email/Phone number" required>
+		  <label> <b>Password</b> </label>
+		  <input class="userinput" type="password" placeholder="Enter your password" required>
+		  <label class="label_log" for="remember"><input type="checkbox" checked="checked" name="remember">Remember Me</label>
+		  <div>
+        <a href="./index.html"><button id="cancel">Cancel</button></a>
+        <button id="login">Log In</button>
+		  </div>
+      <br>
+      <p>Do not have an account? <a href="./signup.html" style="text-decoration: underline;">Sign up</a> here.</p><br>
+      <p class="log_text">
+        <strong>LogIn Via</strong>
+      </p>
+      <br>
+      <div class="LoginIcons">
+        <a href="https://www.facebook.com/schoolsCipher"><i class="fa-brands fa-facebook fa-4x fa-fw"></i></a>
+        <a href="https://www.cipherschools.com/"><i class="fa-brands fa-google fa-4x fa-fw"></i></a>
+        <a href="https://www.linkedin.com/company/cipherschool/?originalSubdomain=in"><i class="fa-brands fa-linkedin fa-4x fa-fw"></i></a>
+        <a href="https://github.com/Cipher-Schools"><i class="fa-brands fa-github fa-4x fa-fw"></i></a>
+      </div>
+     </div>
+    <footer>
+      <div class="footer_container container">
+        <div class="footer_logo">
+          <img src="./src/imgs/img1.png" alt="logo" />
+        </div>
+        <div class="link_lists">
+          <h3>Main Links</h3>
+          <ul>
+            <li>Home</li>
+            <li>your library</li>
+            <li>trending</li>
+            <li>Discover</li>
+          </ul>
+        </div>
+        <div class="link_lists">
+          <h3>know more</h3>
+          <ul>
+            <li>About Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditons</li>
+          </ul>
+        </div>
+        <div class="news_letter">
+          <h3>Support</h3>
+          <input type="email" placeholder="Enter your Email..." />
+          <h3>Follow Us</h3>
+          <div class="icon_container">
+            <div class="icon">
+              <i class="fa-brands fa-facebook fa-1x fa-fw"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-twitter fa-1x fa-fw" aria-hidden="true"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-instagram fa-1x fa-fw" aria-hidden="true"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-youtube fa-1x fa-fw" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+</body>
+</html>
